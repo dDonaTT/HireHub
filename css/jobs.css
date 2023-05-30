@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+
+#google{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.main-btns{
+    display: flex;
+    justify-content: center;
+}
+
+#follow,#visit{
+    margin-top: 10px;
+    height: 30px;
+    margin-left:30px ;
+    margin-right: 30px;
+    font-size: 12px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+#about,#post,#jobs{
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    width: 85px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.job h4{
+    margin-left: 70px;
+}
+
+.job{
+    border: 2px solid white;
+    border-radius: 10px;
+    border-style:dashed;
+    height: 120px;
+    width: 280px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 20px;
+}
+
+#design,#full,#software{
+    height: 24px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+#design{
+    margin-left: 10px;
+}
+
+p{
+    font-size: 10px;
+    float: right;
+    margin-right: 10px;
+}
