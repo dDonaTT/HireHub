@@ -6,57 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp Page</title>
     <link rel="stylesheet" href="./css/signup.css" />
+    <script>
+      function validateForm() {
+        
+        var fullName = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        
+        if (fullName.trim() === "" || email.trim() === "" || password.trim() === "") {
+          alert("Please fill out all the required fields.");
+          return false;
+        }
+
+        
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.match(emailPattern)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+      }
+    </script>
   </head>
   <body>
     <div class="header">Create an Account</div>
 
     <div class="paragraph">
-        Create an account and unlock a world of possibilities! <br />
-        Don't miss out on the advantages of being a member—create your 
-        account today and embark on a remarkable online journey with us!
+      Create an account and unlock a world of possibilities! <br />
+      Don't miss out on the advantages of being a member—create your account today and embark on a remarkable online journey with us!
     </div>
 
-    <div class="form">
-        <div class="input">
-            <label>Full name</label> <br />
-            <br />
-            <input type="text" placeholder="Filan Fisteku" />
-          </div>
-          <br />
+    <form class="form" onsubmit="return validateForm()">
+      <div class="input">
+        <label>Full name</label> <br />
+        <br />
+        <input type="text" id="fullname" placeholder="Filan Fisteku" required />
+      </div>
+      <br />
       <div class="input">
         <label>Email</label> <br />
         <br />
-        <input type="email" placeholder="filanfisteku@gmail.com" />
+        <input type="email" id="email" placeholder="filanfisteku@gmail.com" required/>
       </div>
       <br />
       <div class="input">
         <label>Password</label> <br />
         <br />
-        <input type="password" placeholder="•••••••••" />
+        <input type="password" id="password" placeholder="•••••••••" required/>
       </div>
-    </div>
-
-    <div class="underForm">
-      <div>
-        <input type="checkbox" />
-        <label>Remember Me</label>
-      </div>
-      <p>Forgot Password ?</p>
-    </div>
-    <br>
-    <div class="footer">
-        <div class="login">
-            <a href="">SIGN UP</a>
+      <br />
+      <div class="underForm">
+        <div>
+          <input type="checkbox" />
+          <label>Remember Me</label>
         </div>
-        <br>
-        <div  class="login2">
-            <img src="./images/google.png" >
-            <a href="">SIGN UP WITH GOOGLE</a>
+        <p>Forgot Password?</p>
+      </div>
+      <br />
+      <div class="footer">
+        <div class="login">
+          <a href="login.html" type="submit">SIGN UP</a>
+        </div>
+        <br />
+        <div class="login2">
+          <img src="./images/google.png" />
+          <a href="">SIGN UP WITH GOOGLE</a>
         </div>
 
         <div class="paragraph">
-            You don't have an account yet? <a href="">Sign up</a>
+          You don't have an account yet? <a href="">Sign up</a>
         </div>
-    </div>
+      </div>
+    </form>
   </body>
 </html>

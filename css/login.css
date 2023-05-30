@@ -96,7 +96,11 @@ div label {
   display: flex;
   justify-content: center;
 }
-.footer .login a {
+button{
+  background-color: transparent;
+  border: none;
+}
+.footer .login  {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
