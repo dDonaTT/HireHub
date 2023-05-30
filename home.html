@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="header">
+      <h3>Hello HireHubbers.</h3>
+      <div class="profile-img">
+        <img src="images/profile.png" alt="" />
+      </div>
+      <div class="container">
+        <button class="mode-switch-btn">
+          <i class="fas fa-toggle-on"></i>
+        </button>
+      </div>
+    </div>
+    <div class="section1">
+      <p>Best Online <br />Job Searcher</p>
+      <button class="btn1">Apply now</button>
+    </div>
+
+    <div class="jobinfo">
+      <div class="remote">
+        <div class="file-icon">
+          <i class="fas fa-file"></i>
+        </div>
+        <h4>44.5k</h4>
+        <p>Remote Jobs</p>
+      </div>
+      <div class="full-time">
+        <h4>44.5k</h4>
+        <p>Full-time</p>
+      </div>
+      <br />
+      <div class="part-time">
+        <h4>38.9k</h4>
+        <p>Part-time</p>
+      </div>
+    </div>
+    <div class="paragraph">
+      <p>Recent Job List</p>
+    </div>
+    <div class="recent">
+        <img src="images/apple-logo.png" alt="">
+        <h3>Product Designer</h3>
+        <p>Google Inc <b> •</b> California,USA</p>
+        <div class="salary">
+            <p>$15k/Mo</p>
+        </div>
+        <div class="info">
+            <div class="dev">
+              <p>Senior Dev</p>
+            </div>
+          
+            <div class="time">
+                <p>Full Time</p>
+            </div>
+            <div class="apply">
+                <a href="job.html" style="text-decoration: none;"><p>Apply</p></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="phone-footer">
+      <a href="home.html"> <b><i class="fas fa-home"></i> </b></a>
+      
+      <a href="search.html"><i class="fas fa-search"></i></a>
+      
+
+      
+    </div>
+
+    <!-- -----------------------------JavaScript Start Here------------------------------ -->
+    <script>
+      const modeSwitchBtn = document.querySelector(".mode-switch-btn");
+
+      modeSwitchBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        document.querySelector(".header").classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          modeSwitchBtn.textContent = "Dark";
+        } else {
+          modeSwitchBtn.textContent = "Light";
+        }
+      });
+    </script>
+    </script>
+  </body>
+</html>

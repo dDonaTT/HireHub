@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h3 {
+    margin: 40px 0 0 45px;
+    font-size: larger;
+  }
+  
+  .profile-img {
+    margin-left: auto;
+  }
+  
+  .profile-img img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .section1 {
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #dcb957;
+  }
+  
+  .section1 p {
+    padding-left: 25px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 35px;
+  }
+  
+  .btn1 {
+    background-color: orange;
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  
+  .jobinfo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .paragraph p {
+    margin: 15px;
+    font-size: 20px;
+  }
+  
+  .remote,
+  .full-time,
+  .part-time {
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+  }
+  
+  .remote {
+    background-color: rgb(246, 216, 178);
+    width: 205px;
+    height: 100px;
+  }
+  .container {
+    position: relative;
+    height: 10vh;
+  }
+  
+  .full-time,
+  .part-time {
+    background-color: rgb(250, 178, 83);
+    width: 205px;
+    height: 100px;
+  }
+  
+  .recent {
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(250, 167, 14);
+  }
+  
+  .recent h3 {
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+  
+  .recent p {
+    margin-left: 15px;
+    color: gray;
+    padding-left: 15px;
+  }
+  
+  .recent img {
+    width: 85px;
+    height: 60px;
+    padding-bottom: 15px;
+  }
+  
+  .salary p {
+    color: black;
+    padding-top: 15px;
+    margin-left: 25px;
+    padding-bottom: 15px;
+  }
+  
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .dev,
+  .time,
+  .apply {
+    margin: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .dev p,
+  .time p,
+  .apply p {
+    color: black;
+    border-radius: 15px;
+    padding-top: 5px;
+    height: 30px;
+    width: 110px;
+    background-color: rgb(249, 189, 77);
+  }
+  
+  @media (max-width: 600px) {
+    .jobinfo {
+      flex-direction: column;
+    }
+  
+    .header h3 {
+      margin: 15px;
+      font-size: medium;
+    }
+  
+    .profile-img img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .section1 p {
+      padding-left: 15px;
+      padding-top: 15px;
+      font-size: 16px;
+    }
+  
+    .btn1 {
+      width: 70px;
+      height: 30px;
+      font-size: 14px;
+    }
+  
+    .remote,
+    .full-time,
+    .part-time {
+      width: 100%;
+      height: 80px;
+    
+    }
+  
+    .recent h3 {
+      padding-left: 15px;
+    }
+  
+    .recent p {
+      padding-left: 15px;
+      font-size: 14px;
+    }
+  
+    .recent img {
+      width: 70px;
+      height: 50px;
+      padding-bottom: 15px;
+    }
+  
+    .salary p {
+     
+    }
+  
+    .dev,
+    .time,
+    .apply {
+      margin: 10px;
+    }
+  
+    .dev p,
+    .time p,
+    .apply p {
+      height: 25px;
+      width: 90px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .header h3 {
+      font-size: small;
+    }
+  
+    .profile-img img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .section1 p {
+      font-size: 14px;
+    }
+  
+    .btn1 {
+      width: 60px;
+      height: 25px;
+      font-size: 12px;
+    }
+  
+    .remote,
+    .full-time,
+    .part-time {
+      height: 70px;
+      margin-right: 5px;
+    }
+  
+    .recent h3 {
+      padding-left: 15px;
+      font-size: 14px;
+    }
+  
+    .recent p {
+      padding-left: 15px;
+      font-size: 12px;
+    }
+  
+    .recent img {
+      width: 60px;
+      height: 40px;
+      padding-bottom: 10px;
+    }
+  
+    .salary p {
+     
+      font-size: 12px;
+    }
+  
+    .dev,
+    .time,
+    .apply {
+      margin: 10px;
+      font-size: 12px;
+    }
+  
+    .dev p,
+    .time p,
+    .apply p {
+      height: 20px;
+      width: 80px;
+      font-size: 10px;
+    }
+  }
+  .phone-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+  }
+
+  .phone-footer i {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  body.dark-mode {
+    background-color: black;
+    color: #ffffff;
+  }
+  
+  .header.dark-mode {
+    background-color: black;
+  }
+  
+  .mode-switch-btn {
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:  0.3s ease;
+  }
+  
+  .mode-switch-btn.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }

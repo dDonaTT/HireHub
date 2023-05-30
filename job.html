@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/job.css" />
+    <title>Jobs</title>
+  </head>
+  <body>
+    <div class="btn">
+      <a href="./home.html">
+        <img class="rotate180" src="./images/Button.png" alt="" />
+      </a>
+    </div>
+    <div class="container">
+      <button class="mode-switch-btn">
+        <i class="fas fa-toggle-on"></i>
+      </button>
+    </div>
+    <div class="logo-bar">
+      <img src="images/google-icon.png" alt="" /><br />
+      <h3>UI/UX Designer</h3>
+      <p>Google • California,USA •1day ago</p>
+    </div>
+    <div class="desc">
+      <p>Job Description</p>
+    </div>
+    <div class="lorem">
+      <p>
+        Kompania Google kërkon një Dizajner UI/UX të përkushtuar dhe të
+        përvojshëm për të bashkuar ekipin tonë të dizajnit. <br />
+        Si Dizajner UI/UX, ju do të jeni përgjegjës për krijimin dhe
+        përmirësimin e përvojës së përdoruesit për produktet tona dixhitale.
+        <br />
+        Ju do të punoni ngushtësisht me ekipin e zhvillimit, menaxherin e
+        produktit dhe përdoruesit për <br />
+        të siguruar një dizajn të shkëlqyeshëm dhe një përvojë të përdoruesit të
+        përsosur.
+      </p>
+      <button class="btn1">Apply now</button>
+    </div>
+    <div class="req">
+      <p>Kerkesat</p>
+      <ul>
+        <li>
+          Kompetencë të thellë në dizajnin e ndërfaqes së përdoruesit (UI) dhe
+          përvojën e përdoruesit (UX),<br />
+          duke përfshirë analizën e përdoruesit
+        </li>
+        <li>
+          Përvojë në përdorimin e mjeteve të dizajnit si Adobe Photoshop, Adobe
+          Illustrator, Sketch, dhe InVision.
+        </li>
+        <li>
+          Njohuri të shkëlqyeshme të HTML, CSS dhe të teknologjive të tjera të
+          dizajnit të internetit.
+        </li>
+        <li>Aftësi të shkëlqyera komunikimi dhe bashkëpunimi në ekip.</li>
+      </ul>
+    </div>
+    <button class="btn2">Apply now</button>
+
+    <!-- ------------------- -->
+    <script>
+      const modeSwitchBtn = document.querySelector(".mode-switch-btn");
+
+      modeSwitchBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        document.querySelector(".header").classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          modeSwitchBtn.textContent = "Dark";
+        } else {
+          modeSwitchBtn.textContent = "Light";
+        }
+      });
+    </script>
+  </body>
+</html>

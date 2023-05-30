@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-icon i
+ {
+  margin-right: 5px;
+}
+input {
+  width: 250px;
+  height: 25px;
+  border-radius: 15px;
+}
+body.dark-mode {
+    background-color: black;
+    color: #ffffff;
+  }
+  
+  .header.dark-mode {
+    background-color: black;
+  }
+  
+  .mode-switch-btn {
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:  0.3s ease;
+  }
+  
+  .mode-switch-btn.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+.specs{
+    margin: 30px 25px 25px 25px;
+    font-size: 20px;
+}
+.remote {
+    background-color: orange;
+    width: 120px;
+    height: 230px;
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin at the bottom of the icon */
+  }
+  
+  .file-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  .job-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .remote p {
+    color: white;
+    margin: 0;
+  }
+  .finance {
+    background:rgb(250, 184, 61);
+    width: 120px;
+    height: 230px;
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin at the bottom of the icon */
+  }
+  
+  .file-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .finance p {
+    color: white;
+    margin: 0;
+  }
+  .education {
+    background:rgb(249, 190, 81);
+    width: 120px;
+    height: 230px;
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin at the bottom of the icon */
+  }
+  
+  .file-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .education p {
+    color: white;
+    margin: 0;
+  }
+  .restaurant {
+    background:rgb(249, 190, 81);
+    width: 120px;
+    height: 230px;
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin at the bottom of the icon */
+  }
+  
+  .file-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .restaurant p {
+    color: white;
+    margin: 0;
+  }
+  .health {
+    background:rgb(249, 190, 81);
+    width: 120px;
+    height: 230px;
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin at the bottom of the icon */
+  }
+  
+  .file-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .health p {
+    color: white;
+    margin: 0;
+  }
+  .programming {
+    background:rgb(249, 190, 81);
+    width: 120px;
+    height: 230px;
+    margin: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin at the bottom of the icon */
+  }
+  
+  .file-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .programming p {
+    color: white;
+    margin: 0;
+  }
