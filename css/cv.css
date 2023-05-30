@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+#google{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+form{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    height: 30px;
+    width: 170px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+}
